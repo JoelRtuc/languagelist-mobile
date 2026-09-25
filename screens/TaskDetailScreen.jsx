@@ -1,23 +1,21 @@
 import { View, Text, Image } from "react-native";
 import { StyleSheet } from "react-native";
-import Bread from "../assets/unnamed.webp"
+import Bread from "../assets/eu-c-03.png"
 
-export default function TaskDetailScreen(){//{uri: ''} for webimages
+export default function TaskDetailScreen({route}){//{uri: ''} for webimages
+
+    const {language} = route.params;
 
     return(
         <View style={styles.container}>
             <Image source={Bread} style={styles.img} />
 
             <Text style={styles.title}>
-                Detail
+                {language.languageName}
             </Text>
-            <Text>
-                Screen
-            </Text>
-
             <View style={styles.card}>
                 <Text>
-                    This is a card
+                {language.languageDescription}
                 </Text>
             </View>
         </View>
@@ -42,8 +40,8 @@ const styles = StyleSheet.create({
         boxShadow: '4px 4px #000'
     },
     img: {
-        width: 5,
-        height: 5,
+        width: 500,
+        height: 500,
         resizeMode: 'contain'
     }
 })

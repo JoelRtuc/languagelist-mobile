@@ -30,7 +30,7 @@ const API_URL = "http://192.168.1.236:5165/api/LanguageBases"
             data={languages}
             keyExtractor={(item) => item.id.toString()} 
             renderItem={({item}) => (<TouchableOpacity style={styles.taskItem}
-            onPress={()=> navigation.navigate("TaskDetail", {languages: item})}> <Text>{item.languageName}</Text> </TouchableOpacity>)} />
+            onPress={()=> navigation.navigate("TaskDetail", {language: item})}> <Text>{item.languageName}</Text> </TouchableOpacity>)} />
             </View>
     );
 }
