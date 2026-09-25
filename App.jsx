@@ -13,8 +13,9 @@ export default function App(){
           <Stack.Screen           
             name="TaskList"
             component={TaskListScreen}
-            options={{title: "Detaljer"}}  />
-              <Stack.Screen
+            options={{title: "Detaljer"}}  
+          />
+          <Stack.Screen
             name="TaskDetail"
             component={TaskDetailScreen}
             options={{ title: "Uppgifter" }}

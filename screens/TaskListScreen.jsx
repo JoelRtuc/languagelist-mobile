@@ -2,8 +2,7 @@ import { View, Text, TouchableOpacity } from "react-native"
 import { useState, useEffect } from "react";
 import { StyleSheet } from 'react-native';
 import { FlatList } from "react-native";
-
-const API_URL = "http://192.168.1.236:5165/api/LanguageBases"
+import { API_URL } from "../api";
 
     export default function TaskListScreen({navigation}){   
 
