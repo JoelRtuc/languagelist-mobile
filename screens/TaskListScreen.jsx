@@ -37,5 +37,5 @@ import { API_URL } from "../api";
 const styles = StyleSheet.create({
     container: {flex: 1, padding: 16, backgroundColor: "rgb(255, 255, 255)", marginBottom: 32},
     header: {fontSize: 22, fontWeight: "bold", marginBottom: 12},
-    taskItem: {padding: 12, margin: 8, backgroundColor: "rgba(9, 144, 255, 0.97)", borderRadius: 8, borderRadius: 5, boxShadow: '4px 4px #000'}
+    taskItem: {padding: 12, margin: 8, backgroundColor: "rgba(9, 144, 255, 0.97)", borderRadius: 8, boxShadow: '4px 4px #000'}
 })
